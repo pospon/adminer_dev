@@ -1,0 +1,15 @@
+nginx:
+    image: nginx:latest
+    ports:
+        - "8866:80"
+    links:
+        - php
+    volumes:
+        - ./:/var/www
+        - ./adminer.conf:/etc/nginx/conf.d/adminer.conf
+
+php:
+    image: build.ens.local:5000/php-fpm-symfony
+    volumes:
+        - ./:/var/www
+    working_dir: /var/www
