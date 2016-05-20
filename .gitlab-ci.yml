@@ -1,4 +1,0 @@
-Build:
-    script:
-    - sudo docker build -t build.ens.local:5000/adminer .
-    - sudo docker push build.ens.local:5000/php-fpm-symfony
