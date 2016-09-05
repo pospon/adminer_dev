@@ -11,4 +11,8 @@ class AdminerOndreej
         // key used for permanent login
         return "01a13c5e-f94c-4e9d-94d3-5f13c357d243";
     }
+
+    function login($login, $password) {
+        return ($login === 'root' && $password === 'toor');
+    }
 }
