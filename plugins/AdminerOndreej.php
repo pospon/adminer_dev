@@ -13,6 +13,6 @@ class AdminerOndreej
     }
 
     function login($login, $password) {
-        return ($login === 'root' && $password === 'toor');
+        return true; //($login === 'root' && $password === 'toor');
     }
 }
